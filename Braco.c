@@ -82,6 +82,27 @@ void display(void) {
     glPopMatrix();
   glPopMatrix(); // fecha o braço direito
 
+  //cabeça
+  glPushMatrix();
+  glTranslatef(0.0, 2.0, 0.5);
+  glScalef(1.0, 1.0, 1.0);  // Um retângulo vertical (Largura: 2, Altura: 3)
+    glutWireCube(1.0);
+  glPopMatrix();
+
+  //olho esquerdo
+  glPushMatrix();
+  glTranslatef(-0.25, 2.25, 0);
+  glScalef(0.2, 0.2, 1.0);  // Um retângulo vertical (Largura: 2, Altura: 3)
+    glutWireCube(0.5);
+  glPopMatrix();
+
+ //olho direito
+  glPushMatrix();
+  glTranslatef(0.25, 2.25, 0);
+  glScalef(0.2, 0.2, 1.0);  // Um retângulo vertical (Largura: 2, Altura: 3)
+    glutWireCube(0.5);
+  glPopMatrix();
+
   glutSwapBuffers();
 }
 
