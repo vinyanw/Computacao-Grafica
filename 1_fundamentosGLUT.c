@@ -1,6 +1,8 @@
 #include <GL/glut.h>
 
 void desenhaCena(void) {
+    gluOrtho2D(0.0, 100.0, 0.0, 100.0);
+
     // 1. Limpa o ecrã com a cor de fundo definida
     glClear(GL_COLOR_BUFFER_BIT);
 
